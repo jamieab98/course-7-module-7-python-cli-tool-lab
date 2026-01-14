@@ -29,4 +29,3 @@ class User:
         return task
         # TODO: Search for a task by its title in the user's task list
         # TODO: Return the matching task or None
-        pass
