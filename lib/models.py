@@ -25,10 +25,8 @@ class User:
         print(f"📌 Task '{task.title}' added to {self.name}.")
 
     def get_task_by_title(self, title):
+        task = [task for task in self.tasks if self.title == title]
+        return task
         # TODO: Search for a task by its title in the user's task list
         # TODO: Return the matching task or None
         pass
-
-jamie = User("Jamie")
-laundry = Task("Laundry")
-jamie.add_task(laundry)
